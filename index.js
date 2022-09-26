@@ -1,7 +1,7 @@
 const fs=require('fs');
 const http=require('http');
 const url = require('url');
-const replaceTemplate= require('./complete-node-bootcamp/1-node-farm/modules/replaceTemplate');
+const replaceTemplate= require('./modules/replaceTemplate');
 //////////////////////
 //Files
 
@@ -68,11 +68,11 @@ const replaceTemplate= require('./complete-node-bootcamp/1-node-farm/modules/rep
 //Here we are using the synchronous read because this part will only be 
 //executed once
 
-const tempOverview = fs.readFileSync('./complete-node-bootcamp/1-node-farm/starter/templates/template-overview.html','utf-8');
-const tempCard= fs.readFileSync('./complete-node-bootcamp/1-node-farm/starter/templates/template-card.html','utf-8');
-const tempProduct = fs.readFileSync('./complete-node-bootcamp/1-node-farm/starter/templates/template-product.html','utf-8');
+const tempOverview = fs.readFileSync('./starter/templates/template-overview.html','utf-8');
+const tempCard= fs.readFileSync('./starter/templates/template-card.html','utf-8');
+const tempProduct = fs.readFileSync('./starter/templates/template-product.html','utf-8');
 
-const data = fs.readFileSync('./complete-node-bootcamp/1-node-farm/starter/dev-data/data.json','utf-8');
+const data = fs.readFileSync('./starter/dev-data/data.json','utf-8');
 
 const dataObj= JSON.parse(data);
 
